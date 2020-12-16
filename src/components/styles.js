@@ -1,17 +1,6 @@
 import { css } from "styled-components";
 
-const primaryBase = css`
-  background: #2962ff;
-  box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
-  color: #fff;
-
-  &:hover,
-  &:focus {
-    background: #0039cb;
-  }
-`;
-
-/* styles common to all buttons */
+/* Button Default Styles */
 export const buttonbase = css`
   min-width: 81px;
   min-height: 36px;
@@ -38,18 +27,24 @@ export const buttonbase = css`
     color: #9e9e9e;
     box-shadow: none;
     background-color: #e0e0e0;
+
+    &:hover,
+    &:focus {
+    background-color: #e0e0e0;
+    box-shadow: none;
+  }
   }
 `;
 
 /* theme variants */
 export const sm = css`
-  ${primaryBase};
-  min-width: 73px;
-  min-height: 32px;
+  max-width: 73px;
+  max-height: 32px;
 `;
 
 export const md = css`
-  ${primaryBase};
+min-width: 81px;
+min-height: 36px;
 `;
 
 export const lg = css`
@@ -57,11 +52,7 @@ export const lg = css`
   min-height: 42px;
 `;
 
-export const endIcon = css`
-  min-width: 105px;
-`;
 
-// export const tertiary = css`...`;
 
 /* size variants */
 
