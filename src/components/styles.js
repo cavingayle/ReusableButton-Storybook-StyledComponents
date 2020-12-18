@@ -121,7 +121,5 @@ export const outline = css`
   }
 `;
 export const disableShadow = css`
-  background-color: #3d5afe;
   box-shadow: none;
-  color: white;
 `;
